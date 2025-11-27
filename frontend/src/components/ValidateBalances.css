@@ -1,0 +1,185 @@
+.validate-balances {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.validate-balances h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.validate-balances h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.validation-status {
+  margin-bottom: 25px;
+}
+
+.status-card {
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.status-card h3 {
+  margin-top: 0;
+  color: white;
+}
+
+.status-card.valid {
+  background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.status-card.invalid {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.status-card:hover {
+  transform: translateY(-3px);
+}
+
+.status-text {
+  margin: 10px 0;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.status-detail {
+  margin: 10px 0 0 0;
+  opacity: 0.9;
+  font-size: 0.95em;
+}
+
+.invalid-accounts {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.invalid-accounts h3 {
+  margin-top: 0;
+  color: #856404;
+}
+
+.accounts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.account-alert {
+  background: white;
+  padding: 12px 15px;
+  border-left: 4px solid #dc3545;
+  border-radius: 4px;
+}
+
+.account-alert p {
+  margin: 4px 0;
+  color: #333;
+}
+
+.validation-details {
+  margin-bottom: 20px;
+}
+
+.validation-table {
+  overflow-x: auto;
+}
+
+.validation-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: white;
+}
+
+.validation-table th {
+  background: #f0f0f0;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.validation-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.validation-table tbody tr.valid {
+  border-left: 4px solid #28a745;
+}
+
+.validation-table tbody tr.invalid {
+  border-left: 4px solid #dc3545;
+  background: #f8f9fa;
+}
+
+.validation-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+.status-badge.valid {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.invalid {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.btn-validate {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.btn-validate:hover {
+  background: #0056b3;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 20px;
+  font-size: 1em;
+}
+
+.loading {
+  color: #007bff;
+}
+
+.error {
+  color: #dc3545;
+  background: #f8d7da;
+  padding: 15px;
+  border-radius: 4px;
+}
