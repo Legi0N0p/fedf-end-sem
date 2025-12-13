@@ -1,0 +1,22 @@
+/* basic.css - styles for basic_page.html */
+:root{
+  --bg:#f7f9fb;
+  --card:#ffffff;
+  --primary1:#6a66d8;
+  --primary2:#a36bd8;
+  --accent:#4caf50;
+  --muted:#777;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,Helvetica,sans-serif;background:var(--bg);color:#222}
+.container{max-width:980px;margin:0 auto;padding:2rem}
+.site-header{background:linear-gradient(90deg,var(--primary1),var(--primary2));color:#fff;padding:2rem 0}
+.site-header h1{margin:0;font-size:1.8rem}
+.site-header .lead{opacity:.95;margin-top:.5rem}
+.card{background:var(--card);padding:1.25rem;border-radius:10px;box-shadow:0 6px 20px rgba(20,30,40,0.06);margin-top:1rem}
+.actions{margin-top:1rem}
+.btn{display:inline-block;padding:.5rem 1rem;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(0,0,0,0.06);margin-left:.5rem}
+code{background:#f3f4f6;padding:.2rem .4rem;border-radius:4px}
+.site-footer{padding:1.25rem 0;color:var(--muted);text-align:center;margin-top:2rem}
+@media (max-width:600px){.container{padding:1rem}.site-header{padding:1rem}.card{padding:.9rem}.site-header h1{font-size:1.3rem}}
